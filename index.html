@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini - Dictionary</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <audio id="audio-player"></audio>
+    <div class="card">
+        <header class="title">Mini Dictionary</header>
+        <hr />
+        <div class="search-card">
+          <input type="text" id="input" placeholder="Search for a word to get it details" requiredspellcheck="false"/>
+          <img src="icon/search.png" alt="Search" class="search-icon" onclick="searchWord()" />
+          <img src="icon/close.png" alt="Close" class="close" onclick="clearSearch()" />
+        </div>
+        <p id="infor" class="infor">Example: ant, game, hacker</p>
+      
+        <div id="word-info">
+          <h2 id="word-name"></h2>
+          <p id="word-phonetic"></p>
+        </div>
+      
+        <div id="phonetics-container">
+          <h3>Phonetics</h3>
+          <ul id="phonetics-list"></ul>
+        </div>
+      
+        <div id="origin-container">
+          <h3>Origin</h3>
+          <p id="word-origin"></p>
+        </div>
+      
+        <div id="meanings-container">
+          <h3>Meanings</h3>
+        </div>
+      
+        <div id="extra-info">
+          <div id="synonyms-container">
+            <h3>Synonyms</h3>
+            <ul id="synonyms-list"></ul>
+          </div>
+          <div id="antonyms-container">
+            <h3>Antonyms</h3>
+            <ul id="antonyms-list"></ul>
+          </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

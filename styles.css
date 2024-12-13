@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url('backk.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+  
+.card{
+    width: 420px;
+    max-height: 90vh;
+    padding: 25px 28px 45px;
+    border-radius: 12px;
+    background-color: rgba(17, 25, 40, 0.75);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    overflow-y: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.title{
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+  
+.search-card{
+    margin: 35px 0 18px;
+    position: relative;
+}
+  
+#input{
+    height: 53px;
+    width: 340px;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 0 42px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+}
+  
+#input::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+  
+.search-card img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+  
+.search-card img.search-icon{
+    left: 15px;
+}
+  
+.search-card img.close{
+    right: 15px;
+}
+  
+#infor{
+    font-size: 13px;
+    color: white;
+}
+  
+h3{
+    color: white;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+ul, li{
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+ul li{
+    margin-bottom: 7px;
+}
